@@ -21,7 +21,7 @@ default_args = {
     'start_date': datetime(2024, 2, 29),
     'email_on_failure': False,
     'email_on_retry': False,
-    'retries': 1,
+    'retries': 1, # test
 }
 
 with DAG('upload_to_s3_dynamic', default_args=default_args, schedule_interval='@daily') as dag:

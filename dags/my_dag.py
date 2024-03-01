@@ -7,7 +7,7 @@ import os
 def upload_files_to_s3():
     s3_hook = S3Hook(aws_conn_id='aws_conn_id')
     s3_bucket = 'sample-airflow-bucket09'
-    local_directory = './data' # testing1 Testing2
+    local_directory = './data' # testing1 Testing2 23
 
     for file in os.listdir(local_directory):
         if file.endswith(".csv"):
